@@ -1,0 +1,134 @@
+.highed-container {
+  font-family: @font-main;
+  color: @text-main;
+  background: @background-main;
+  border: @border-main;
+  height: 100%;
+  width: 100%;
+  .highed-box-size;
+}
+
+.highed-chart-container {
+  position: relative;
+  margin: 0;
+}
+
+.highed-chart-container-icon {
+  float: left;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  //background-size: 300%;
+
+  background-color: @bright-background;
+  padding: 4px;
+  .highed-box-size;
+  //transform:scale();
+}
+
+@media (max-width: 700px) {
+  .highed-hsplitter .panel.highed-chart-preview-bar {
+    display: none !important;
+  }
+}
+
+@media (min-width: 700px) {
+  .highed-hsplitter .panel.highed-chart-preview-bar {
+    background: @background-preview;
+    border-left: 1px solid @panel-divider;
+    padding: 10px;
+  }
+}
+
+.highed-container .titlebar {
+  color: @text-main;
+  background: @background-main;
+  height: 48px;
+  width: 100%;
+  font-weight: 100;
+  position: relative;
+  padding: 5px;
+  line-height: 40px;
+  .highed-box-size;
+  .highed-nosel;
+}
+
+.highed-container .titlebar .settings {
+}
+
+.highed-container .icons {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  height: 100%;
+}
+
+.highed-expand-container {
+  position: absolute;
+  z-index: 2;
+  width: 0%;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  display: none;
+  background-color: #fff;
+}
+
+.highed-warningbar {
+  background: #e6a031 !important;
+  .highed-errorbar-body {
+    background: #F5AB35;
+  }
+}
+
+.highed-errorbar {
+  opacity: 0;
+  pointer-events: none;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  background: @background-error;
+  color: @color-error;
+  position: fixed;
+  z-index: 100000;
+  bottom: 0px;
+  left: 22px;
+  margin-bottom: 15px;    
+  border-radius: 3px;
+  border: 1px solid rgba(128, 128, 128, 0.4392156862745098);
+  box-shadow: 2px 3px 6px 0px rgba(0, 0, 0, 0.25882352941176473);
+}
+
+.highed-errorbar-headline {
+  font-size: 15px;
+  text-align: left;
+  padding: 5px;
+}
+.highed-errorbar-headline-text {
+  width: calc(100% - 15px);
+  display: inline-block;
+}
+.highed-errorbar-close {
+  width: 10px;
+  padding-right: 5px;
+  float: right;
+  vertical-align: top;
+  cursor: pointer;
+}
+.highed-errorbar-body {
+  overflow-y: auto;
+  min-height: 23px;
+  padding: 5px;
+  background: lighten(@background-error, 5);    
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+.highed-errorbar a {
+  color: @color-error !important;
+}
+
+.highed-errorbar-more {
+  margin-top: 10px;
+}

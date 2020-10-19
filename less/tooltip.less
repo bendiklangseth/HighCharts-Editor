@@ -1,0 +1,40 @@
+.highed-tooltip-fixed {
+  position: fixed;
+  z-index: 10011;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.highed-tooltip {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  //display: none;
+  border-radius: 5px;
+  background: @secondary-background-panel;
+  color: @secondary-color-panel;
+  border: @border-main;
+  .highed-transition-opacity;
+}
+
+@media (max-width: 400px) {
+  .highed-tooltip {
+    font-size: 20px;
+  }
+}
+.highed-template-tooltip-text-left {
+  left: 57px !important;
+}
+.highed-template-tooltip-text-left::after {
+  left: 13% !important;
+}
+.highed-tooltip-container {
+  font-size: 12px;
+  color: black;
+  position: absolute;
+  top: 0px;
+  right: -15px;
+}

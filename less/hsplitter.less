@@ -1,0 +1,68 @@
+.highed-hsplitter {
+	height:100%;
+	width:100%;
+	.highed-box-size;
+	overflow: hidden;
+	//white-space: nowrap;
+}
+
+.highed-hsplitter .panel {
+	//display: inline-block;
+	float:left;
+	overflow-x: hidden;
+	//white-space: normal;
+	overflow-y: auto;
+	height:100%;
+	background:@background-panel;
+	.highed-box-size;
+}
+
+.highed-hsplitter .left {
+	width:30%;
+}
+
+.highed-hsplitter .right {	
+	width:70%;
+	
+}
+.highed-hsplitter-body {
+	/*background:@background-panel;*/
+	color: @text-panel;
+	width:100%;
+	height:100%;
+	position: relative;
+	.highed-box-size;
+}
+
+.highed-step-body .highed-hsplitter .panel.right .highed-hsplitter-body {
+    /*background: @bright-background;*/
+    color: @bright-text;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    /*border: @border-main;*/
+}
+
+.highed-hsplitter-resize-bar {
+	position: absolute;
+	width:5px;
+	height:100%;
+
+	cursor:ew-resize;
+	border-left:@border-main;
+	border-right:@border-main;
+	.highed-box-size;
+}
+
+.highed-hsplitter-resize-bar:hover {
+	//background:@highlight-background;
+}
+
+@media (max-width: 550px) {
+	.highed-hsplitter-body-responsive {
+		float:none !important;
+		max-height: 42px;
+		width: 100% !important;
+	}	
+}

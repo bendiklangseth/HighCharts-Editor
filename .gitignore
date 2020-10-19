@@ -1,0 +1,15 @@
+node_modules/
+.DS_Store
+dist/
+out/
+cache/
+*.zip
+api.js
+output
+docs/
+demos/
+generated_src
+highed.editor.config.json
+src/core/highed.config.js
+*.log
+

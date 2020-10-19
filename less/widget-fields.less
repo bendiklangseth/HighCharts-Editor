@@ -1,0 +1,496 @@
+.highed-field-color-categories {
+  width: 100%;
+  white-space: nowrap;
+  height: 25px;
+  border-radius: 3px;
+  border: 1px solid black;
+  cursor: copy;
+  .highed-transition;
+  .highed-box-size;
+
+  .highed-field-category {
+    height: 100%;
+    display: inline-block;
+    .highed-transition;
+  }
+}
+
+.highed-field-multiple-colorpicker {
+
+  .highed-field-color-markers {
+    position: relative;
+    height: 32px;
+    cursor: copy;
+    top: -30px;
+    .highed-field-color-marker {
+      background: var(--background);
+      border: 2px solid black;
+      display: inline-block;
+      height: 33px;
+      position: absolute;
+      width: 11px;
+      border-radius: 14px;
+      top: 1px;
+      cursor: move;
+      div {
+        width: 7px;
+        height: 29px;
+        border: 2px solid white;
+        border-radius: 7px;
+      }
+    }
+  }
+}
+
+
+.highed-field-colorcategories {
+  position: relative;
+  top: 13px;
+  .highed-field-color-markers {
+    height: 20px;
+    position: relative;
+    top: -5px;
+    .highed-transition;
+
+    .highed-field-color-marker {
+      background: var(--background);
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+      display: inline-block;
+      height: 10px;
+      position: absolute;
+      width: 10px;
+      .highed-transition;
+    }
+
+    .highed-field-color-marker:before {
+      border-bottom: 9px solid black;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      content: "";
+      height: 0;
+      position: absolute;
+      top: -9px;
+      left: -1px;
+      width: 0;
+    }
+
+    .highed-field-color-marker:after {
+      border-bottom: 7px solid var(--background);
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      content: "";
+      height: 0;
+      left: 0px;
+      position: absolute;
+      top: -7px;
+      width: 0;
+    }
+  }
+
+  .highed-field-value-markers {
+    height: 32px;
+    position: absolute;
+    top: 0px;
+    width: 100%;    
+    cursor: copy;
+    display: block;
+    .highed-field-value-marker {
+      position: absolute;
+      display: inline-block;
+      background: var(--background);
+      width: 11px;
+      border: 2px solid black;
+      height: 33px;
+      top: -3px;
+      border-radius: 13px;
+      text-align: center;
+      cursor: move;
+      div {
+        width: 7px;
+        height: 29px;
+        border: 2px solid white;
+        border-radius: 7px;
+      }
+      span {    
+        position: relative;
+        top: -49px;
+      }
+    }
+  }
+}
+
+.highed-field-colorcategories {
+  .highed-field-color-markers {
+    top: 0px;
+    .highed-field-color-marker {
+      height: 7px;
+    }
+  }
+
+}
+
+.highed-field-multiple-colorpicker {
+  width: 100%;
+  .highed-transition;
+  .highed-box-size;
+  .highed-field-color-gradient {
+    height: 25px;
+    border-radius: 3px;
+    background: blue;
+    border: 1px solid #000;
+  }
+}
+
+.highed-field-colorpicker {
+  width: 100%;
+  border: @input-border;
+  padding: 5px;
+  min-height: 30px;
+  font-size: 13px;
+  .highed-transition;
+  .highed-box-size;
+}
+
+.highed-field-container {
+  padding-right: 5px;
+  width: 100%;
+  position: relative;
+  .highed-box-size;
+  .cm-s-neo.CodeMirror {
+    border: 1px solid #aaa;
+  }
+}
+
+.highed-field-reset {
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: -7px;
+  text-align: center;
+  line-height: 32px !important;
+  cursor: pointer;
+  color: @wiz-bar-background;
+  .highed-transition;
+}
+
+.highed-field-code {
+  outline: none;
+  resize: none;
+  width: 100%;
+  height: 250px;
+  font-family: monospace;
+}
+
+.highed-field-code-container {
+}
+
+.highed-field-reset:hover {
+  color: @accent-color;
+}
+
+.highed-field-colorpicker-reset:hover {
+  color: @accent-color;
+}
+
+.highed-field-colorpicker {
+  max-width: 29px;
+  display: block;
+  width: 100%;
+  font-size: 9px !important;
+  line-height: 1.5 !important;
+  padding-top: 8px !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  text-align: center;
+}
+
+.highed-field-input,
+.highed-field-colorpicker {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .highed-customize-field-label {
+    font-weight: 500;
+    font-size: 12px;
+  }
+}
+
+.highed-field-input {
+  width: 100%;
+  outline: none;
+  border: @input-border;
+  color: @text-main !important;
+  padding: 7px;
+  min-height: 30px;
+  .highed-box-size;
+}
+.highed-field-textarea {
+  width: 100%;
+  border: @input-border;
+  color: @text-main !important;
+  padding: 7px;
+  min-height: 8rem;
+  .highed-box-size;
+}
+
+.highed-field-range {
+  //position: relative;
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  height: 30px;
+  border: @input-border;
+  .highed-box-size;
+}
+
+.highed-field-range-indicator {
+  //position:absolute;
+  line-height: 10px;
+  min-height: 15px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.highed-field-range-null {
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  font-size: 12px;
+}
+
+.highed-field-select {
+  width: 100%;
+  min-height: 30px;
+  border: @input-border;
+  .highed-box-size;
+}
+
+.highed-field-tooltip {
+  font-size: 12px;
+  font-family: @font-secondary;
+}
+
+.highed-field-colorpicker-compact {
+  position: relative;
+  display: inline-block;
+  padding: 4px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  border: @input-border;
+  width: 30px;
+  height: 30px;
+}
+
+.highed-field-array-add {
+  background: @background-main;
+  color: @text-main;
+  width: 28px;
+  height: 28px;
+  padding: 4px;
+  font-size: 11px;
+  line-height: 30px !important;
+  text-align: center;
+  display: inline-block;
+  border: 1px dashed #000;
+  border-radius: 3px;
+  cursor: pointer;
+  .highed-transition;
+}
+
+.highed-field-array-add.fa-plus:before {
+  position: relative;
+  top: -5px;
+}
+
+.highed-field-table {
+  width: 100%;
+  padding: 0px;
+  border-collapse: collapse;
+
+  .highed-box-size;
+}
+
+.highed-field-table td:first-child {
+  min-width: auto !important;
+  width: auto !important;
+}
+
+.highed-field-table td:last-child {
+  max-width: 30px;
+}
+
+.highed-field-table-widget-column {
+  width: 100%;
+  position: relative;
+}
+
+.highed-field-array-add:hover {
+  background: @wiz-bar-background;
+  color: @wiz-bar-color;
+}
+
+.highed-field-array-remove {
+  opacity: 0;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: @background-main;
+  color: @text-main;
+  font-size: 12px;
+  border-left: @border-main;
+  border-top: @border-main;
+  padding: 2px;
+  .highed-transition;
+}
+
+.highed-field-error {
+  //position:absolute;
+  opacity: 0;
+  display: none;
+  background: @background-error;
+  color: @color-error;
+  left: 0px;
+  bottom: -10px;
+  pointer-events: none;
+  padding: 4px;
+  .highed-box-size;
+  .highed-transition;
+}
+
+.highed-field-header {
+  font-size: 13px;
+  padding-bottom: 5px;
+  font-weight: 500;
+  color: rgb(36, 54, 113);
+}
+
+.annotation-buttons {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 9px;
+  padding-top: 6px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  img {
+    width: 25px;
+    margin-top: -5px;
+  }
+}
+.annotation-buttons.highcharts-active {
+  border: 1px solid #25386F;
+  border-radius: 4px;
+}
+
+.annotation-buttons.highed-svg-icon {
+  .highed-tooltip-text {
+    margin-left: -47px !important;
+  }
+}
+.annotation-buttons.times {
+  margin-left: 10px;
+}
+
+.annotation-buttons-container {
+  overflow: hidden;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  padding: 0px !important;
+}
+
+.highed-annotation-container {
+  font-size: 14px;
+  background-color: white;
+  color: #25386f;
+  border-radius: 40px;
+  margin-right: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  width: 32px;
+  overflow: hidden;
+  height: 32px;
+  padding: 0px !important;
+  vertical-align: bottom;
+
+  .fa-ellipsis-h {
+    font-size: 8px;
+    padding-top: 21px;
+    margin-left: -6px;
+    cursor: pointer;
+    .highed-annotation-submenu {
+      position: absolute;
+      width: 44px;
+      z-index: 10;
+      margin-left: -39px;
+      margin-top: 3px;
+      border: 1px solid #e8e8e8;
+      background-color: white;
+      border-top: 0px solid transparent;
+      display: none;
+    }
+
+    .highed-annotation-submenu.active {
+      display: block;
+      .annotation-buttons {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 10px;
+        padding-right: 9px;
+      }
+      .annotation-buttons:hover {
+        background-color: #eff2fb;
+      }
+    }
+  }
+}
+
+.highed-annotation-container.disable {
+  background-color: rgba(197, 197, 197, 0.65);
+}
+
+.highed-annotation-container.active {
+  width: 207px;
+  .annotation-button {
+    .fa-marker {
+      color: #42C8C0;
+    }
+  }
+}
+.annotation-buttons.active {
+  color: #42c8c0;
+}
+
+.highed-active-annotation {
+  position: absolute;
+}
+
+.highed-template-tooltip.annotation-buttons {
+  .highed-tooltip-text {
+    position: fixed;
+    top: initial;
+    left: initial;
+    margin-top: 25px;
+    margin-left: -68px;
+  }
+}
+.highed-template-tooltip.annotation-buttons.usingsafari {
+  padding-right: 14px;
+  .highed-tooltip-text {
+    margin-top: 80px;
+    margin-left: -54px;
+  }
+}
