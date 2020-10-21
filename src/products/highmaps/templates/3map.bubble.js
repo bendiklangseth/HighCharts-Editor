@@ -33,6 +33,7 @@ highed.templates.add('Maps', {
   thumbnail: 'mapbubble.svg',
   dataValidator: false,
   loadForEachSeries: false,
+  sampleSets: ['population-density'],
   constructor: 'Map',
   load: function(chart, event) {
     //Create serie if chart only has one

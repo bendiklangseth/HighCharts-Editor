@@ -71,14 +71,10 @@ highed.templates.addCategory('Scatter And Bubble', {
 highed.templates.addCategory('Polar', {
 });
 
+highed.templates.addCategory('More', {
+});
+
 highed.templates.addCategory('Maps', {
   samples: ['earthquake-magnitude', 'eu-timezones',
             'population-density', 'world-population']
-});
-
-highed.templates.addCategory('CustomTemplate', {
-  samples: ['earthquake-magnitude']
-});
-
-highed.templates.addCategory('More', {
 });
