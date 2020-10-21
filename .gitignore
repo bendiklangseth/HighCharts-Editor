@@ -10,4 +10,5 @@ docs/
 demos/
 generated_src
 *.log
+tmp.txt
 
